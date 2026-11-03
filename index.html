@@ -143,6 +143,112 @@
       <div class="stepper" hidden></div>
     </section>
 
+    <!-- Auracast + bundles (Figma exploration 4): one rounded cream card like the headliners card, the speaker lineup video
+         top right (loops while on screen), the bundle cards below -->
+    <div class="auracast-band">
+      <div class="auracast-card">
+        <section class="auracast" aria-labelledby="auracast-title">
+          <img class="auracast__logo" src="assets/features/auracast-logo.png" width="800" height="200" alt="Auracast, a Bluetooth technology">
+          <div class="auracast__copy">
+            <p class="overline">AURACAST</p>
+            <h2 id="auracast-title" class="t3">Start a listening party</h2>
+            <p class="body3">Link compatible xboom speakers together with Auracast™ for synchronized sound and expanded coverage. See which models qualify.</p>
+          </div>
+          <video class="auracast__lineup product-video" src="assets/features/Speakers-STAGE501-AUSALBK_multiply-music-auracast_features_900x600.mp4" poster="assets/features/auracast-lineup.png" width="900" height="600" muted loop playsinline preload="auto" aria-label="The xboom lineup of party and portable speakers"></video>
+        </section>
+
+        <!-- Bundles: one row; when the cards don't fit it scrolls with the next card peeking -->
+        <section class="bundles" aria-label="Bundles" data-carousel>
+          <div class="bundles__viewport" data-carousel-viewport>
+            <div class="bundles__track">
+              <article class="bundle-card">
+                <img class="bundle-card__media" src="assets/bundles/stereo-pair.jpg" width="384" height="256" alt="Two xboom Grab speakers">
+                <div class="bundle-card__body">
+                  <p class="overline overline--muted">bundle</p>
+                  <h3 class="bundle-card__title">Stereo Pair</h3>
+                  <p class="body3 text-secondary">Purchase two xboom Grabs</p>
+                  <!-- Prices are placeholders in the Figma -->
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__now">$XXX.XX</span>
+                    <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
+                  </div>
+                  <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Stereo Pair bundle">Shop Now</a>
+                </div>
+              </article>
+              <article class="bundle-card">
+                <img class="bundle-card__media" src="assets/bundles/home-and-away.jpg" width="384" height="256" alt="An xboom Stage 501 party speaker and xboom Buds earbuds">
+                <div class="bundle-card__body">
+                  <p class="overline overline--muted">bundle</p>
+                  <h3 class="bundle-card__title">Home and away</h3>
+                  <p class="body3 text-secondary">Purchase an xboom Stage 501 and an xboom Buds</p>
+                  <!-- Prices are placeholders in the Figma -->
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__now">$XXX.XX</span>
+                    <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
+                  </div>
+                  <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Home and away bundle">Shop Now</a>
+                </div>
+              </article>
+              <article class="bundle-card">
+                <img class="bundle-card__media" src="assets/bundles/party-set.jpg" width="384" height="256" alt="An xboom Stage 301 party speaker and an xboom Grab speaker">
+                <div class="bundle-card__body">
+                  <p class="overline overline--muted">bundle</p>
+                  <h3 class="bundle-card__title">Party set</h3>
+                  <p class="body3 text-secondary">Purchase an xboom Stage 301 and an xboom Grab</p>
+                  <!-- Prices are placeholders in the Figma -->
+                  <div class="bundle-card__price">
+                    <span class="bundle-card__now">$XXX.XX</span>
+                    <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
+                  </div>
+                  <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Party set bundle">Shop Now</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="stepper" hidden></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- AI Karaoke breaker (Figma "ai karaoke breaker"): photo on the left fading into dark green behind the copy -->
+    <section class="karaoke-breaker" aria-labelledby="karaoke-title">
+      <img class="karaoke-breaker__img" src="assets/features/karaoke-breaker.jpg" width="2650" height="864" alt="Friends sing karaoke on a rooftop at dusk around an xboom party speaker">
+      <div class="karaoke-breaker__copy">
+        <p class="overline">AI KARAOKE</p>
+        <h2 id="karaoke-title" class="t3">Superstardom, note for note</h2>
+        <p class="body3">Built-in AI Karaoke on the LG xboom Stage 501 and the new Power series turns virtually any track into your signature song. No separate app to download—just connect a compatible mic<sup>6</sup> and seize the spotlight. AI-enhanced vocals provide the polish. You earn the encores.</p>
+      </div>
+    </section>
+
+    <!-- FYI RAiDiO -->
+    <section class="radio" aria-labelledby="radio-title" data-carousel>
+      <div class="radio__intro">
+        <p class="overline overline--regular">FYI Raidio</p>
+        <h2 id="radio-title" class="t3">The next wave in radio</h2>
+        <p class="body2">Power up your xboom with FYI RAiDiO, a revolutionary audio experience. Created by will.i.am, FYI RAiDiO is a fresh mix of nonstop music and news, AI generated and personalized for you.</p>
+      </div>
+      <div class="radio__viewport" data-carousel-viewport>
+        <div class="radio__grid">
+          <article class="radio-card">
+            <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_avatar_ai.mp4" muted loop playsinline preload="auto" aria-label="An animated AI DJ persona"></video></div>
+            <h3 class="subtitle2">AI personas with personality</h3>
+            <p class="body2">Behind the magic is a team of AI DJs, each with their own style, energy and cultural nuances. Interact with any of them to experience radio through different perspectives.</p>
+          </article>
+          <article class="radio-card">
+            <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_video_2.mp4" muted loop playsinline preload="auto" aria-label="The FYI RAiDiO app showing stations and personas"></video></div>
+            <h3 class="subtitle2">Elevated music—and news</h3>
+            <p class="body2">Call up a station you care about and let it play. You’ll get the stories that matter plus tunes that fit your mood, all with the clarity LG xboom’s signature sound.</p>
+          </article>
+          <article class="radio-card">
+            <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_video_1.mp4" muted loop playsinline preload="auto" aria-label="Close-up of an xboom speaker against a cream backdrop"></video></div>
+            <h3 class="subtitle2">Easy listening, literally</h3>
+            <p class="body2">Select a station based on your interest to enjoy curated music and news. All personalized just for you—no more endless scrolling or searching.</p>
+          </article>
+        </div>
+      </div>
+      <div class="stepper" hidden></div>
+    </section>
+
     <!-- Featured headliners -->
     <section class="headliners-wrap" id="headliners" aria-labelledby="headliners-title">
       <div class="headliners">
@@ -285,114 +391,6 @@
         </div>
       </div>
     </section>
-
-    <!-- AI Karaoke / Auracast -->
-    <!-- AI Karaoke breaker (Figma "ai karaoke breaker"): photo on the left fading into dark green behind the copy -->
-    <section class="karaoke-breaker" aria-labelledby="karaoke-title">
-      <img class="karaoke-breaker__img" src="assets/features/karaoke-breaker.jpg" width="2650" height="864" alt="Friends sing karaoke on a rooftop at dusk around an xboom party speaker">
-      <div class="karaoke-breaker__copy">
-        <p class="overline">AI KARAOKE</p>
-        <h2 id="karaoke-title" class="t3">Superstardom, note for note</h2>
-        <p class="body3">Built-in AI Karaoke on the LG xboom Stage 501 and the new Power series turns virtually any track into your signature song. No separate app to download—just connect a compatible mic<sup>6</sup> and seize the spotlight. AI-enhanced vocals provide the polish. You earn the encores.</p>
-      </div>
-    </section>
-
-    <!-- Auracast + bundles (Figma "auracast + bundles"): one cream band, the speaker lineup video on the right (loops while on screen) -->
-    <div class="auracast-band">
-      <section class="auracast" aria-labelledby="auracast-title">
-        <img class="auracast__logo" src="assets/features/auracast-logo.png" width="800" height="200" alt="Auracast, a Bluetooth technology">
-        <div class="auracast__copy">
-          <p class="overline">AURACAST</p>
-          <h2 id="auracast-title" class="t3">Start a listening party</h2>
-          <p class="body3">Link compatible xboom speakers together with Auracast™ for synchronized sound and expanded coverage. See which models qualify.</p>
-        </div>
-        <video class="auracast__lineup product-video" src="assets/features/Speakers-STAGE501-AUSALBK_multiply-music-auracast_features_900x600.mp4" poster="assets/features/auracast-lineup.png" width="900" height="600" muted loop playsinline preload="auto" aria-label="The xboom lineup of party and portable speakers"></video>
-      </section>
-
-      <!-- Bundles: one row; when the cards don't fit it scrolls with the next card peeking -->
-      <section class="bundles" aria-label="Bundles" data-carousel>
-        <div class="bundles__viewport" data-carousel-viewport>
-          <div class="bundles__track">
-            <article class="bundle-card">
-              <img class="bundle-card__media" src="assets/bundles/stereo-pair.jpg" width="384" height="256" alt="Two xboom Grab speakers">
-              <div class="bundle-card__body">
-                <p class="overline overline--muted">bundle</p>
-                <h3 class="bundle-card__title">Stereo Pair</h3>
-                <p class="body3 text-secondary">Purchase two xboom Grabs</p>
-                <!-- Prices are placeholders in the Figma -->
-                <div class="bundle-card__price">
-                  <span class="bundle-card__now">$XXX.XX</span>
-                  <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
-                </div>
-                <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Stereo Pair bundle">Shop Now</a>
-              </div>
-            </article>
-            <article class="bundle-card">
-              <img class="bundle-card__media" src="assets/bundles/home-and-away.jpg" width="384" height="256" alt="An xboom Stage 501 party speaker and xboom Buds earbuds">
-              <div class="bundle-card__body">
-                <p class="overline overline--muted">bundle</p>
-                <h3 class="bundle-card__title">Home and away</h3>
-                <p class="body3 text-secondary">Purchase an xboom Stage 501 and an xboom Buds</p>
-                <!-- Prices are placeholders in the Figma -->
-                <div class="bundle-card__price">
-                  <span class="bundle-card__now">$XXX.XX</span>
-                  <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
-                </div>
-                <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Home and away bundle">Shop Now</a>
-              </div>
-            </article>
-            <article class="bundle-card">
-              <img class="bundle-card__media" src="assets/bundles/party-set.jpg" width="384" height="256" alt="An xboom Stage 301 party speaker and an xboom Grab speaker">
-              <div class="bundle-card__body">
-                <p class="overline overline--muted">bundle</p>
-                <h3 class="bundle-card__title">Party set</h3>
-                <p class="body3 text-secondary">Purchase an xboom Stage 301 and an xboom Grab</p>
-                <!-- Prices are placeholders in the Figma -->
-                <div class="bundle-card__price">
-                  <span class="bundle-card__now">$XXX.XX</span>
-                  <span class="bundle-card__deal"><span class="bundle-card__save">$100 OFF</span><s class="bundle-card__was"><span class="sr-only">Was </span>$XXX.XX</s></span>
-                </div>
-                <a class="btn-red bundle-card__cta" href="#" aria-label="Shop Now: Party set bundle">Shop Now</a>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="stepper" hidden></div>
-        <div class="stepper" hidden></div>
-      </section>
-    </div>
-
-    <!-- FYI RAiDiO -->
-    <!-- Full-width band behind FYI RAiDiO (Figma exploration 02: white at 10% over the black page) -->
-    <div class="radio-band">
-      <section class="radio" aria-labelledby="radio-title" data-carousel>
-        <div class="radio__intro">
-          <p class="overline overline--regular">FYI Raidio</p>
-          <h2 id="radio-title" class="t3">The next wave in radio</h2>
-          <p class="body2">Power up your xboom with FYI RAiDiO, a revolutionary audio experience. Created by will.i.am, FYI RAiDiO is a fresh mix of nonstop music and news, AI generated and personalized for you.</p>
-        </div>
-        <div class="radio__viewport" data-carousel-viewport>
-          <div class="radio__grid">
-            <article class="radio-card">
-              <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_avatar_ai.mp4" muted loop playsinline preload="auto" aria-label="An animated AI DJ persona"></video></div>
-              <h3 class="subtitle2">AI personas with personality</h3>
-              <p class="body2">Behind the magic is a team of AI DJs, each with their own style, energy and cultural nuances. Interact with any of them to experience radio through different perspectives.</p>
-            </article>
-            <article class="radio-card">
-              <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_video_2.mp4" muted loop playsinline preload="auto" aria-label="The FYI RAiDiO app showing stations and personas"></video></div>
-              <h3 class="subtitle2">Elevated music—and news</h3>
-              <p class="body2">Call up a station you care about and let it play. You’ll get the stories that matter plus tunes that fit your mood, all with the clarity LG xboom’s signature sound.</p>
-            </article>
-            <article class="radio-card">
-              <div class="radio-card__media"><video class="product-video" src="assets/radio/Custom_HE-xboom-next_wave_video_1.mp4" muted loop playsinline preload="auto" aria-label="Close-up of an xboom speaker against a cream backdrop"></video></div>
-              <h3 class="subtitle2">Easy listening, literally</h3>
-              <p class="body2">Select a station based on your interest to enjoy curated music and news. All personalized just for you—no more endless scrolling or searching.</p>
-            </article>
-          </div>
-        </div>
-        <div class="stepper" hidden></div>
-      </section>
-    </div>
 
     <!-- FAQs (questions are still placeholders in the Figma wireframe) -->
     <section class="faqs" aria-labelledby="faq-title">

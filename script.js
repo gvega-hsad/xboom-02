@@ -9,7 +9,7 @@ function updateSubnavColor() {
   const r = subnavLabel.getBoundingClientRect();
   // what's directly behind the label (the bar itself ignores the pointer, so it isn't hit)
   const under = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
-  subnav.classList.toggle('is-on-light', !!under?.closest('.headliners, .footer, .gnb, .auracast-band'));
+  subnav.classList.toggle('is-on-light', !!under?.closest('.headliners, .footer, .gnb, .auracast-card'));
   subnav.classList.toggle('is-frosted', window.scrollY > 0); // frosted as soon as the page has scrolled, at every width
 }
 const requestSubnavColor = () => { if (!subnavFrame) subnavFrame = requestAnimationFrame(updateSubnavColor); };
